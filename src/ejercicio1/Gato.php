@@ -1,13 +1,12 @@
+// src/Ejercicio1/Gato.php
 <?php
-declare(strict_types=1);
-
 class Gato extends Felino {
-    private bool $leGustaElAgua;
-
-    public function __construct(bool $leGustaElAgua = false) {
-        parent::__construct("Maullido", "Pescado/Croquetas", "Doméstico", "Felis catus");
-        $this->leGustaElAgua = $leGustaElAgua;
+    public function __construct() {
+        parent::__construct("Maullido", "Pescado y alimento seco", "Doméstico", "Felis catus");
     }
 
-    public function getLeGustaElAgua(): bool { return $this->leGustaElAgua; }
+    // Método extra considerado necesario
+    public function ronronear(): string {
+        return "El gato está ronroneando porque está cómodo.";
+    }
 }

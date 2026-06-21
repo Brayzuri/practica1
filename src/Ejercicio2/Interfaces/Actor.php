@@ -1,6 +1,5 @@
+// src/Ejercicio2/Interfaces/Actor.php
 <?php
-declare(strict_types=1);
-
 interface Actor {
-    public function realizarAccion(): string;
+    public function interpretarRol(): string;
 }

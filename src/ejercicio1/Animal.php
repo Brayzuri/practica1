@@ -1,21 +1,31 @@
+// src/Ejercicio1/Animal.php
 <?php
-declare(strict_types=1);
-
 abstract class Animal {
     protected string $sonido;
     protected string $alimentos;
-    protected string $habitat;
-    protected string $nombreCientifico;
+    protected string $hábitat;
+    protected string $nombreCientífico;
 
-    public function __construct(string $sonido, string $alimentos, string $habitat, string $nombreCientifico) {
+    public function __construct(string $sonido, string $alimentos, string $hábitat, string $nombreCientífico) {
         $this->sonido = $sonido;
         $this->alimentos = $alimentos;
-        $this->habitat = $habitat;
-        $this->nombreCientifico = $nombreCientifico;
+        $this->hábitat = $hábitat;
+        $this->nombreCientífico = $nombreCientífico;
     }
 
-    public function getNombreCientifico(): string { return $this->nombreCientifico; }
-    public function getSonido(): string { return $this->sonido; }
-    public function getAlimentos(): string { return $this->alimentos; }
-    public function getHabitat(): string { return $this->habitat; }
+    public function getNombreCientífico(): string {
+        return $this->nombreCientífico;
+    }
+
+    public function getSonido(): string {
+        return $this->sonido;
+    }
+
+    public function getAlimentos(): string {
+        return $this->alimentos;
+    }
+
+    public function getHábitat(): string {
+        return $this->hábitat;
+    }
 }

@@ -1,13 +1,12 @@
+// src/Ejercicio1/Perro.php
 <?php
-declare(strict_types=1);
-
 class Perro extends Canido {
-    private string $raza;
-
-    public function __construct(string $raza) {
-        parent::__construct("Ladrido", "Balanceado/Carne", "Doméstico", "Canis lupus familiaris");
-        $this->raza = $raza;
+    public function __construct() {
+        parent::__construct("Ladrido", "Croquetas y carne", "Doméstico", "Canis lupus familiaris");
     }
 
-    public function getRaza(): string { return $this->raza; }
+    // Método extra considerado necesario para diferenciarlo del lobo
+    public function moverCola(): string {
+        return "El perro menea la cola alegremente.";
+    }
 }

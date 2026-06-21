@@ -1,6 +1,5 @@
+// src/Ejercicio2/Interfaces/ObjetoInerte.php
 <?php
-declare(strict_types=1);
-
 interface ObjetoInerte {
-    public function getMaterialPrincipal(): string;
+    public function especificarMaterial(): string;
 }
